@@ -1,0 +1,48 @@
+Course | Title | Credit
+Collateral Courses 
+PHYS 191 | University Physics I | 4
+PHYS 192 | University Physics II | 4 
+CHEM 120 | General Chemistry I | 4 
+CHEM 121 | General Chemistry II | 4 
+BIOL 112 | Principles of Biology I | 4 
+BIOL 113 | Principles of Biology II | 4 
+Required Mathematics Courses
+AMAT 120 | Applied Calculus A | 4 
+MATH 122 | Calculus I | 4 
+AMAT 220 | Applied Calculus B | 4
+MATH 221 | Calculus II | 4 
+AMAT 240 | Introduction to Linear Algebra | 4
+CSIT 170 | Discrete Mathematics | 3
+STAT 230 | Data Science and Statistics | 3
+CSIT 104 | Python Programming I | 3
+CSIT 111 | Fundamentals of Java Programming | 3
+CSIT 112 | Fundamentals of Programming II | 3
+CSIT 212 | Data Structures and Algorithms | 3
+CSIT 230 | Computer Systems | 3
+CSIT 231 | Systems Programming | 3
+CSIT 379 | Computer Science Theory | 3
+CSIT 315 | Software Engineering I | 3
+CSIT 415 | Software Engineering II | 3
+CSIT 460 | Computer Security | 3
+CSIT 313 | Fundamentals of Programming Languages | 3
+CSIT 340 | Computer Networks | 3
+CSIT 345 | Operating Systems | 3
+CSIT 355 | Database Systems | 3
+CSIT 317 | System Analysis and Design | 3
+CSIT 321 | Introduction to Numerical Computing | 3
+CSIT 335 | Introduction to Human-Computer Interaction (HCI) | 3
+CSIT 337 | Internet Computing | 3
+CSIT 356 | Introduction to Data Science| 3
+CSIT 357 | Artificial Intelligence | 3
+CSIT 359 | Data Visualization | 3
+CSIT 365 | Information Assurance and Security | 3
+CSIT 429 | Parallel and Distributed Computing | 3
+CSIT 431 | Introduction to Robotics | 3
+CSIT 437 | Web Services | 3
+CSIT 440 | Principles of Data Mining | 3
+CSIT 451 | Mobile Computing | 3
+CSIT 456 | Advanced Techniques in Data Science | 3
+CSIT 491 | Cooperative Education in Computer Science and Information Technology | 3-8
+CSIT 495 | Special Topics in Undergraduate Computer Science | 1-3
+CSIT 497 | Undergraduate Research I | 1-3
+CSIT 498 | Undergraduate Research II | 3

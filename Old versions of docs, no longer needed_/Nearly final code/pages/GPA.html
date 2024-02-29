@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<style>
+  h1{
+    text-align: center;
+    font-size: 3.2vw;
+  }
+  h2{
+    text-align:center;
+    font-size: 1.7vw;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td{
+    text-align: center;
+  }
+  .button{ text-align: center; }
+</style>
+<html>
+
+<head>
+<head>
+      <meta charset = "utf-8">
+      <title>GPA</title>
+    </head>
+    
+
+</head>
+
+<body style="background-color: grey;">
+<h1> GPA Page </h1>
+<h2>{{statement}}</h2>
+
+<table class = "center">
+  <tr>
+    <th>
+      This is your current GPA: {{gpa}}
+    </th>
+  </tr>
+  <tr>
+    <th>
+    What would you like to do?
+    </th>
+  </tr>
+  <tr>
+    <td>
+      {{home}}
+    </td>
+  </tr>
+  
+
+</table>
+
+
+<form action="speak" method="post">
+  <div class="button">
+  <button name="button" value="2">speak</button>
+  </div>
+</form>
+
+
+</body>
+</html>

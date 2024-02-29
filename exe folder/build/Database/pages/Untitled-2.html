@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main id="main" class="main">
+                <script>
+                    // (A) SCORE SHEET & SUBJECTS
+                    var scores = {
+                      "N/A": 0,
+                      A:4,"A-":3.67,
+                      "B+":3.33,B:3.0,
+                      "B-":2.67, "C+":2.33,
+                       C:2.0,"C-":1.67,
+                      "D+":1.33,D:1.0,
+                       F:0
+
+                      
+                    };
+                    var subjects = [
+                      "Course 1", "Course 2", "Course 3", "Course 4","Course 5","Course 6"
+                    ];
+                    // (C) CALCULATE FUNCTION
+                var gpacalc = () => {
+                  let all = document.querySelectorAll("#gpa-wrap select"),
+                      score = 0;
+                  for (let i of all) {
+                    // Use parseFloat if decimals are involved.
+                    score += parseInt(i.value);
+                  }
+                  document.getElementById("gpa-total").innerHTML = score;
+                  document.getElementById("gpa-average").innerHTML = score / all.length;
+                };
+                    </script>
+                    <script>
+                // (B) DRAW HTML
+                window.addEventListener("load", () => {
+                  let wrapper = document.getElementById("gpa-wrap"),
+                      table = document.createElement("table"),
+                      row = table.insertRow(),
+                      cell = null, selector = null, option = null;
+                  for (let s of subjects) {
+                    cell = row.insertCell();
+                    cell.innerHTML = s;
+                    cell = row.insertCell();
+                    selector = document.createElement("select");
+                    cell.appendChild(selector);
+                    for (let grade in scores) {
+                      option = document.createElement("option");
+                      option.innerHTML = grade;
+                      option.value = scores[grade];
+                      selector.appendChild(option);
+                      selector.onchange = gpacalc;
+                    }
+                    row = table.insertRow();
+                  }
+                  wrapper.appendChild(table);
+                  gpacalc();
+                });
+                </script>
+                
+                <!-- (B) HTML -->
+                <section class="section">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <h5 class="card-title">Current GPA:   Variable passed from python</h5>
+                                </div>
+                                </div>
+                                <div class="col-md-6">
+                                <div class="form-floating">
+                                    <h5 class="card-title">What if GPA: </h5>
+                                </div>
+                        <div class="form-floating mb-3" id="gpa-wrap"></div>
+                        <div>
+                        Total Points: <span id="gpa-total">0</span>
+                        </div>
+                        <div>
+                        GPA of the term: <span id="gpa-average">0</span>
+                        </div>
+                        <div>
+                            Total GPA: <span id="gpa-average">0</span>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

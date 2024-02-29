@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<style>
+  h1{
+    text-align: center;
+    font-size: 3.2vw;
+  }
+  h2{
+    text-align:center;
+    font-size: 1.7vw;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td{
+    text-align: center;
+  }
+  .button{ text-align: center; }
+
+
+
+</style>
+
+<html>
+
+<head>
+<head>
+      <meta charset = "utf-8">
+      <title>Home</title>
+    </head>
+    
+
+</head>
+
+<body style="background-color: grey;">
+<h1>Home Page</h1> 
+<h2>You are logged in</h2>
+
+
+<table class = "center">
+  <tr>
+    <th>
+    {{question}}
+    </th>
+  </tr>
+  <tr>
+    <td>
+      1. Current GPA
+    </td>
+  </tr>
+  <tr>
+    <td>
+      2. What-if GPA
+    </td>
+  </tr>
+  <tr>
+    <td>
+      3. Unofficial Transcript
+    </td>
+  </tr>
+  <tr>
+    <td>
+      4. Course Catalog
+    </td>
+  </tr>
+  <tr>
+    <td>
+      5. Course Advisement
+    </td>
+  </tr>
+  <tr>
+    <td>
+      6. End session
+    </td>
+  </tr>
+
+</table>
+
+
+<form action="speak" method="post">
+  <div class="button">
+  <button name="button" value="1">speak</button>
+  </div>
+</form>
+
+
+</body>
+
+
+
+</html>
